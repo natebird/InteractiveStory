@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rld-jx-5hd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rld-jx-5hd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,10 +13,6 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SeY-L2-Z4T"/>
-                        <viewControllerLayoutGuide type="bottom" id="gxs-af-I6l"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,13 +30,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gxs-af-I6l" firstAttribute="top" secondItem="WWd-Xh-u5z" secondAttribute="bottom" id="2PW-pD-hva"/>
-                            <constraint firstItem="WWd-Xh-u5z" firstAttribute="top" secondItem="SeY-L2-Z4T" secondAttribute="bottom" id="6QB-HD-Gfr"/>
-                            <constraint firstAttribute="trailing" secondItem="WWd-Xh-u5z" secondAttribute="trailing" id="ClA-Rv-beW"/>
-                            <constraint firstItem="jzb-WV-XVe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XWh-sm-N2s"/>
+                            <constraint firstItem="IGc-OQ-yux" firstAttribute="bottom" secondItem="WWd-Xh-u5z" secondAttribute="bottom" id="2PW-pD-hva"/>
+                            <constraint firstItem="WWd-Xh-u5z" firstAttribute="top" secondItem="IGc-OQ-yux" secondAttribute="top" id="6QB-HD-Gfr"/>
+                            <constraint firstItem="IGc-OQ-yux" firstAttribute="trailing" secondItem="WWd-Xh-u5z" secondAttribute="trailing" id="ClA-Rv-beW"/>
+                            <constraint firstItem="jzb-WV-XVe" firstAttribute="centerX" secondItem="IGc-OQ-yux" secondAttribute="centerX" id="XWh-sm-N2s"/>
                             <constraint firstAttribute="bottom" secondItem="jzb-WV-XVe" secondAttribute="bottom" constant="48" id="YNC-gB-lAA"/>
-                            <constraint firstItem="WWd-Xh-u5z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u78-YM-6me"/>
+                            <constraint firstItem="WWd-Xh-u5z" firstAttribute="leading" secondItem="IGc-OQ-yux" secondAttribute="leading" id="u78-YM-6me"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="IGc-OQ-yux"/>
                     </view>
                     <navigationItem key="navigationItem" id="I4g-eL-mog"/>
                 </viewController>
@@ -51,14 +49,11 @@
         <scene sceneID="nSo-UF-wXZ">
             <objects>
                 <viewController id="zil-CV-Nb6" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZjK-1m-EtC"/>
-                        <viewControllerLayoutGuide type="bottom" id="kkr-2u-FUg"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B3J-tP-gYg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="3S1-Mm-yY9"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwc-2n-mcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
