@@ -26,6 +26,16 @@ extension Story {
     }
 }
 
+extension Page {
+    func story(attributed: Bool) -> NSAttributedString {
+        if attributed {
+            return story.attributedText
+        } else {
+            return NSAttributedString(string: self.story.text)
+        }
+    }
+}
+
 class PageController: UIViewController {
 
     var page: Page?
@@ -79,7 +89,7 @@ class PageController: UIViewController {
 
         if let page = page {
             artworkView.image = page.story.artwork
-            storyLabel.attributedText = page.story.attributedText
+            storyLabel.attributedText = page.story(attributed: true)
 
             if let firstChoice = page.firstChoice {
                 firstChoiceButton.setTitle(firstChoice.title, for: .normal)
