@@ -12,6 +12,14 @@ class PageController: UIViewController {
 
     var page: Page?
 
+    // MARK: - User Interface Properties
+
+    let artworkView = UIImageView()
+    let storyLabel = UILabel()
+    let firstChoiceButton = UIButton(type: .system)
+    let secondChoiceButton = UIButton(type: .system)
+
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -25,12 +33,32 @@ class PageController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .blue
 
+        if let page = page {
+            print(page.story.text)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+
+        view.addSubview(artworkView)
+        artworkView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            artworkView.topAnchor.constraint(equalTo: view.topAnchor),
+            artworkView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            artworkView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            artworkView.rightAnchor.constraint(equalTo: view.rightAnchor)
+        ])
+    }
+
+
+
     
 
     /*
