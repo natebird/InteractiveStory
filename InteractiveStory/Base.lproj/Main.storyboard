@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="596" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Controller-->
         <scene sceneID="nSo-UF-wXZ">
             <objects>
-                <viewController id="zil-CV-Nb6" sceneMemberID="viewController">
+                <viewController id="zil-CV-Nb6" customClass="PageController" customModule="InteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B3J-tP-gYg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
