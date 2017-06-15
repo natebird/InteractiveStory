@@ -28,19 +28,33 @@
                                     <segue destination="zil-CV-Nb6" kind="show" identifier="startAdventure" id="a1Y-QF-6GE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pWg-P9-4dv" userLabel="Name">
+                                <rect key="frame" x="24" y="519" width="327" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="nameTextField"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="IGc-OQ-yux" firstAttribute="trailing" secondItem="pWg-P9-4dv" secondAttribute="trailing" constant="24" id="1Zh-vo-U7P"/>
                             <constraint firstItem="IGc-OQ-yux" firstAttribute="bottom" secondItem="WWd-Xh-u5z" secondAttribute="bottom" id="2PW-pD-hva"/>
                             <constraint firstItem="WWd-Xh-u5z" firstAttribute="top" secondItem="IGc-OQ-yux" secondAttribute="top" id="6QB-HD-Gfr"/>
                             <constraint firstItem="IGc-OQ-yux" firstAttribute="trailing" secondItem="WWd-Xh-u5z" secondAttribute="trailing" id="ClA-Rv-beW"/>
+                            <constraint firstItem="pWg-P9-4dv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Crc-5G-eyc"/>
+                            <constraint firstItem="jzb-WV-XVe" firstAttribute="top" secondItem="pWg-P9-4dv" secondAttribute="bottom" constant="40" id="UPW-Vh-i6T"/>
                             <constraint firstItem="jzb-WV-XVe" firstAttribute="centerX" secondItem="IGc-OQ-yux" secondAttribute="centerX" id="XWh-sm-N2s"/>
                             <constraint firstAttribute="bottom" secondItem="jzb-WV-XVe" secondAttribute="bottom" constant="48" id="YNC-gB-lAA"/>
                             <constraint firstItem="WWd-Xh-u5z" firstAttribute="leading" secondItem="IGc-OQ-yux" secondAttribute="leading" id="u78-YM-6me"/>
+                            <constraint firstItem="pWg-P9-4dv" firstAttribute="leading" secondItem="IGc-OQ-yux" secondAttribute="leading" constant="24" id="ykT-8H-mrH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IGc-OQ-yux"/>
                     </view>
                     <navigationItem key="navigationItem" id="I4g-eL-mog"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="pWg-P9-4dv" id="bKj-Nn-q3O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
